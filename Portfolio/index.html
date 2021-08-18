@@ -119,7 +119,7 @@ ul li{
     </style>
 </head>
 
-<body onclick="armanrobot();">
+<body>
 
 <H1 id="head">PORTFOLIO</H1>
 <div class="left"><img src="arman3.jpg" width="100%" height="100%" id="img" /></div>
@@ -250,6 +250,8 @@ ul li{
 
 speak("Welcome to Arman Nakhwa Portfolio Happy to see you");
 */
+
+
 function armanrobot() {
     var message="Welcome to Arman Nakhwa Portfolio Happy to see you";
     //alert('hi');
@@ -263,8 +265,10 @@ function armanrobot() {
   
 	window.speechSynthesis.speak(speech);
 }
-
-
+x = document.querySelectorAll("a");
+  for (i = 0; i < x.length; i++) {
+    x[i].addEventListener("click",armanrobot);
+  }
 
 </script>
 </body>
